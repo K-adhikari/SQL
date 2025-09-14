@@ -79,6 +79,7 @@ select AVG(Value)
 from coffee_production
 where Year in (select Year from honey_production where Value > 1000000);
 
+
 --Method2
 select AVG (Value)
 from coffee_production

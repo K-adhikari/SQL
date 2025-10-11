@@ -4,7 +4,7 @@ CREATE TABLE Toys (
         ID INTEGER NOT NULL,
         Variety VARCHAR(20),
         Quantity INTEGER
-        );
+        
 
 
 -- Question 2. Add the below-mentioned entries to the table using the INSERT statement.

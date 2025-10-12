@@ -6,7 +6,6 @@ CREATE TABLE Toys (
         Quantity INTEGER
         
 
-
 -- Question 2. Add the below-mentioned entries to the table using the INSERT statement.
 ID	Variety	Quantity
 1	Chew toy	20

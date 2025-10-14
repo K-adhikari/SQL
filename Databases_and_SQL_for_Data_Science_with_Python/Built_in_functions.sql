@@ -21,7 +21,7 @@ SELECT DISTINCT UCASE(ANIMAL)
 
 SELECT SUM(QUANTITY)
  FROM PETRESCUE
-  WHERE MONTH(RESCUEDATE)="05"
+ WHERE MONTH(RESCUEDATE)='05'
 
 
 -- Question 5. The rescue shelter is supposed to find good homes for all animals within 1 year of their rescue. Write a query that displays the ID, Rescue date, and the target date.

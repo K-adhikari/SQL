@@ -2,7 +2,7 @@
 
 SELECT AVG(COST / QUANTITY)
  FROM PETRESCUE
- WHERE ANIMAL = 'Dog'
+ WHERE ANIMAL='Dog'
 
 
 -- Question 2. Write a query that displays the animal name in each rescue in uppercase without duplications.

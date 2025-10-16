@@ -5,3 +5,5 @@ String_patterns_sorting_and_grouping.sql contains code to retrieve, sort, and gr
 Built_in_functions.sql uses built-in SQL functions like AVG, SUM, UCASE, LCASE, DATE_ADD, MONTH etc.
 
 Subqueries_and_nested_select.sql uses subqueries and nested select arguments.
+
+Multiple_tables.sql uses implicit joins to combine information from two tables.

@@ -6,4 +6,4 @@ Built_in_functions.sql uses built-in SQL functions like AVG, SUM, UCASE, LCASE, 
 
 Subqueries_and_nested_select.sql uses subqueries and nested select arguments.
 
-Multiple_tables.sql uses implicit joins to combine information from two tables.
+Multiple_tables.sql uses subqueries and implicit joins to combine information from multiple tables.

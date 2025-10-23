@@ -8,4 +8,6 @@
 
 'Subqueries_and_nested_select.sql' uses subqueries and nested select arguments.
 
+'Real_world_data.ipynb' contains the analysis of real world data-set with SQL and Python.
+
 

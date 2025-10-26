@@ -8,6 +8,6 @@
 
 'Subqueries_and_nested_select.sql' uses subqueries and nested select arguments.
 
-'Real_world_data.ipynb' and 'Chicago_publicschools.ipynb' contain the analysis of real world data-set with SQL and Python using ipython-sql. Here, Pandas is first used to download the csv file from the internet and df.to_sql is used to take the dataframe and write it into a table within a SQL database. The SQL database was then used for analysis using Line Magic and Cell Magic as required.
+'Real_world_data.ipynb', 'Chicago_publicschools.ipynb', and 'Database_querying_with_SQLite.ipynb' contain the analysis of real world data-set with SQL and Python using ipython-sql. Here, Pandas is first used to download the csv file from the internet and df.to_sql is used to take the dataframe and write it into a table within a SQL database. The SQL database was then used for analysis using Line Magic and Cell Magic as required.
 
 

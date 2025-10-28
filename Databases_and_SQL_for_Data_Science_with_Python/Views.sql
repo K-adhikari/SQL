@@ -3,17 +3,18 @@
 CREATE VIEW EMP_DEPT AS SELECT EMP_ID, FIRST_NAME, LAST_NAME, DEP_ID FROM EMPLOYEES
 
 
---Question 2. Using select, query the EMP_DEPT view to retrieve all the records.
+-- Question 2. Using select, query the EMP_DEPT view to retrieve all the records.
 
 SELECT * FROM EMP_DEPT
 
 
---Question 3. Modify 'EMP_DEPT' such that it displays Department names instead of Department IDs. Pull the information from EMPLOYEES and DEPARTMENTS TABLE.
+-- Question 3. Modify 'EMP_DEPT' such that it displays Department names instead of Department IDs. Pull the information from EMPLOYEES and DEPARTMENTS TABLE.
 
 CREATE OR REPLACE VIEW EMP_DEPT AS
 SELECT EMP_ID, FIRST_NAME, LAST_NAME, DEP_NAME
 FROM EMPLOYEES, DEPARTMENTS
 WHERE EMPLOYEES.DEP_ID = DEPARTMENTS.DEPT_ID_DEP
+  
 
 -- Question 4. Drop the view "EMP_DEPT"
 

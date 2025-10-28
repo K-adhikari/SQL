@@ -1,4 +1,4 @@
--- Question 1. Create a view "EMP_DEPT" which has the 'EMP_ID', "FIRST_NAME", "LAST_NAME", and 'DEP_ID' from EMPLOYEES table.
+-- Question 1. Create a view 'EMP_DEPT' which has the 'EMP_ID', 'FIRST_NAME', 'LAST_NAME', and 'DEP_ID' from EMPLOYEES table.
 
 CREATE VIEW EMP_DEPT AS SELECT EMP_ID, FIRST_NAME, LAST_NAME, DEP_ID FROM EMPLOYEES
 
@@ -8,7 +8,7 @@ CREATE VIEW EMP_DEPT AS SELECT EMP_ID, FIRST_NAME, LAST_NAME, DEP_ID FROM EMPLOY
 SELECT * FROM EMP_DEPT
 
 
---Question 3. Modify "EMP_DEPT" such that it displays Department names instead of Department IDs. Pull the information from EMPLOYEES and DEPARTMENTS TABLE.
+--Question 3. Modify 'EMP_DEPT' such that it displays Department names instead of Department IDs. Pull the information from EMPLOYEES and DEPARTMENTS TABLE.
 
 CREATE OR REPLACE VIEW EMP_DEPT AS
 SELECT EMP_ID, FIRST_NAME, LAST_NAME, DEP_NAME

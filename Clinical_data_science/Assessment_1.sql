@@ -5,7 +5,7 @@ SELECT distinct FIRST_CAREUNIT FROM ICUSTAYS
 
 -- Question 2. Using the D_ITEMS table, how many unique values in LABEL have the word "weight" in them?
 
-SELECT distinct LABEL FROM D_ITEMS where lower(LABEL) like "%weight%"
+SELECT distinct LABEL FROM D_ITEMS WHERE lower(LABEL) LIKE "%weight%"
 
 
 -- Question 3. Using the ICUSTAYS table, how many ICU Stays are in the database?
@@ -30,9 +30,9 @@ SELECT distinct SUBJECT_ID FROM ICUSTAYS
 
 -- Question 7. What is the maximum number of ICU stays for any individual patient?   
 
-SELECT SUBJECT_ID, count(distinct HADM_ID) as ADMISSION_COUNT FROM ICUSTAYS 
+SELECT SUBJECT_ID, COUNT(DISTINCT HADM_ID) AS ADMISSION_COUNT FROM ICUSTAYS 
    GROUP BY SUBJECT_ID
-   ORDER BY ADMISSION_COUNT desc
+   ORDER BY ADMISSION_COUNT DESC
 
 
 -- Question 8. Write a query to perform an inner join of DIAGNOSES_ICD and D_ICD_DIAGNOSES that included the values for ROW_ID from both tables?  

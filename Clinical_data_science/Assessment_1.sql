@@ -57,6 +57,6 @@ SELECT count(ADMISSION_LOCATION) FROM ADMISSIONS where ADMISSION_LOCATION = "EME
 
 -- Question 12. What is the maximum number of prescription records that any individual patient has in their record?
 
-SELECT SUBJECT_ID, count(ROW_ID) as times FROM PRESCRIPTIONS
+SELECT SUBJECT_ID, COUNT(ROW_ID) AS times FROM PRESCRIPTIONS
      GROUP BY SUBJECT_ID 
-     ORDER BY times desc
+     ORDER BY times DESC

@@ -5,7 +5,7 @@ SELECT DISTINCT FIRST_CAREUNIT FROM ICUSTAYS
 
 -- Question 2. Using the D_ITEMS table, how many unique values in LABEL have the word "weight" in them?
 
-SELECT DISTINCT LABEL FROM D_ITEMS WHERE lower(LABEL) LIKE "%weight%"
+SELECT DISTINCT LABEL FROM D_ITEMS WHERE LOWER(LABEL) LIKE "%weight%"
 
 
 -- Question 3. Using the ICUSTAYS table, how many ICU Stays are in the database?
@@ -37,12 +37,12 @@ SELECT SUBJECT_ID, COUNT(DISTINCT HADM_ID) AS ADMISSION_COUNT FROM ICUSTAYS
 
 -- Question 8. Write a query to perform an inner join of DIAGNOSES_ICD and D_ICD_DIAGNOSES that included the values for ROW_ID from both tables?  
 
-SELECT * FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b using (ICD9_CODE)
+SELECT * FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b USING (ICD9_CODE)
 
 
 -- Question 9. How many rows in DIAGNOSES_ICD have an ICD9 code that contains the word "hypertension"? 
 
-SELECT count(ICD9_CODE) FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b using (ICD9_CODE) where lower(LONG_TITLE) like "%hypertension%"
+SELECT count(ICD9_CODE) FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b USING (ICD9_CODE) WHERE lower(LONG_TITLE) LIKE "%hypertension%"
 
 
 -- Question 10. How many records in PATIENTS have an entry in INPUTEVENTS_MV?  

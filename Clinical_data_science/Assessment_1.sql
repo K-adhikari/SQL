@@ -1,16 +1,16 @@
 -- Question 1. Usingthe ICUSTAYS table, how many types of FIRST_CAREUNIT are there?
 
-SELECT distinct FIRST_CAREUNIT FROM ICUSTAYS
+SELECT DISTINCT FIRST_CAREUNIT FROM ICUSTAYS
 
 
 -- Question 2. Using the D_ITEMS table, how many unique values in LABEL have the word "weight" in them?
 
-SELECT distinct LABEL FROM D_ITEMS WHERE lower(LABEL) LIKE "%weight%"
+SELECT DISTINCT LABEL FROM D_ITEMS WHERE lower(LABEL) LIKE "%weight%"
 
 
 -- Question 3. Using the ICUSTAYS table, how many ICU Stays are in the database?
 
-SELECT count(*) FROM ICUSTAYS
+SELECT COUNT(*) FROM ICUSTAYS
 
 
 -- Question 4. What is the earliest INTIME from the ICUSTAYS table?  

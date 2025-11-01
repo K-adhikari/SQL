@@ -15,17 +15,17 @@ SELECT COUNT(*) FROM ICUSTAYS
 
 -- Question 4. What is the earliest INTIME from the ICUSTAYS table?  
 
-SELECT min(INTIME) FROM ICUSTAYS
+SELECT MIN(INTIME) FROM ICUSTAYS
 
 
 -- Question 5. What is the latest OUTTIME from the ICUSTAYS table?    
 
-SELECT max(OUTTIME) FROM ICUSTAYS
+SELECT MAX(OUTTIME) FROM ICUSTAYS
 
 
 -- Question 6. How many distinct patients are in the ICUSTAYS table?  
 
-SELECT distinct SUBJECT_ID FROM ICUSTAYS
+SELECT DISTINCT SUBJECT_ID FROM ICUSTAYS
 
 
 -- Question 7. What is the maximum number of ICU stays for any individual patient?   

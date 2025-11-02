@@ -20,4 +20,4 @@ from Employees
 
 select *
 from Tracks
-limit 20;
+limit 20

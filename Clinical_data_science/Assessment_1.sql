@@ -42,7 +42,7 @@ SELECT * FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b USING (ICD9_CODE)
 
 -- Question 9. How many rows in DIAGNOSES_ICD have an ICD9 code that contains the word "hypertension"? 
 
-SELECT count(ICD9_CODE) FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b USING (ICD9_CODE) WHERE lower(LONG_TITLE) LIKE "%hypertension%"
+SELECT COUNT(ICD9_CODE) FROM DIAGNOSES_ICD a INNER JOIN D_ICD_DIAGNOSES b USING (ICD9_CODE) WHERE LOWER(LONG_TITLE) LIKE "%hypertension%"
 
 
 -- Question 10. How many records in PATIENTS have an entry in INPUTEVENTS_MV?  

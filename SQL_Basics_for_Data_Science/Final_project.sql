@@ -49,7 +49,7 @@ group by sl.State
   
 select sum(yp.Value)
 from yogurt_production yp 
-where yp.Year = 2022 and yp.State_ANSI in (select distinct cp.State_ANSI from cheese_production cp where cp.Year = 2023);
+where yp.Year = 2022 and yp.State_ANSI in (select distinct cp.State_ANSI from cheese_production cp where cp.Year = 2023)
 
 
 -- Question 8. List all states from state_lookup that are missing from milk_production in 2023.
@@ -59,7 +59,7 @@ from state_lookup sl
 left join milk_production mp 
 on sl.State_ANSI = mp.State_ANSI
 where mp.Year = 2023
-group by sl.State;
+group by sl.State
 
 
 -- Question 9. List all states with their cheese production values for April 2023 and check if Delaware is on the list.
@@ -77,7 +77,7 @@ group by sl.State
 --Method 1
 select AVG(Value)
 from coffee_production
-where Year in (select Year from honey_production where Value > 1000000);
+where Year in (select Year from honey_production where Value > 1000000)
 
 
 --Method2
@@ -86,4 +86,4 @@ from coffee_production
 where Year in (select Year
 from honey_production hp 
 group by Year
-having sum(Value) > 1000000);
+having sum(Value) > 1000000)

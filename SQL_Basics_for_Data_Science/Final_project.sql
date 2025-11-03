@@ -1,8 +1,8 @@
 -- Question 1. Total milk production for 2023.
 
-select SUM(Value)
-from milk_production
-where Year = 2023
+SELECT SUM(Value)
+FROM milk_production
+WHERE Year = 2023
 
 
 -- Question 2. Which states had cheese produciton greater than 100 million in April 2023?

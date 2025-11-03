@@ -17,9 +17,9 @@ GROUP BY sl.State
 
 -- Question 3. Total value of coffee production for 2011.
   
-select SUM(Value)
-from coffee_production
-where Year = 2011
+SELECT SUM(Value)
+FROM coffee_production
+WHERE Year = 2011
 
 
 -- Question 4. Average Honey Production for 2022.

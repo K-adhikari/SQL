@@ -7,12 +7,12 @@ WHERE Year = 2023
 
 -- Question 2. Which states had cheese produciton greater than 100 million in April 2023?
   
-select sl.State, SUM(cp.Value)
-from state_lookup sl 
-join cheese_production cp 
-on sl.State_ANSI = cp.State_ANSI
-where cp.Year = 2023 and cp.Period ='APR'
-group by sl.State
+SELECT sl.State, SUM(cp.Value)
+FROM state_lookup sl 
+JOIN cheese_production cp 
+ON sl.State_ANSI = cp.State_ANSI
+WHERE cp.Year = 2023 AND cp.Period ='APR'
+GROUP BY sl.State
 
 
 -- Question 3. Total value of coffee production for 2011.

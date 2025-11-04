@@ -24,15 +24,15 @@ WHERE Year = 2011
 
 -- Question 4. Average Honey Production for 2022.
   
-select AVG(Value)
-from honey_production
-where Year = 2022
+SELECT AVG(Value)
+FROM honey_production
+WHERE Year = 2022
 
 
 -- Question 5. Generate list of state names with their ANSI codes.
   
-select State, State_ANSI
-from state_lookup
+SELECT State, State_ANSI
+FROM state_lookup
 
   
 -- Question 6. List all states with cheese production values from April 2023 and find the value for New Jersey.

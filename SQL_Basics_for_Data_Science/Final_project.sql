@@ -47,9 +47,9 @@ GROUP BY sl.State
   
 -- Question 7. Find total yogurt production for states in year 2022 which also have cheese production data from 2023.
   
-select sum(yp.Value)
-from yogurt_production yp 
-where yp.Year = 2022 and yp.State_ANSI in (select distinct cp.State_ANSI from cheese_production cp where cp.Year = 2023)
+SELECT sum(yp.Value)
+FROM yogurt_production yp 
+WHERE yp.Year = 2022 AND yp.State_ANSI IN (SELECT DISTINCT cp.State_ANSI FROM cheese_production cp WHERE cp.Year = 2023)
 
 
 -- Question 8. List all states from state_lookup that are missing from milk_production in 2023.

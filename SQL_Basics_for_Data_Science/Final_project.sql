@@ -1,4 +1,4 @@
--- Question 1. Total milk production for 2023.
+CT-- Question 1. Total milk production for 2023.
 
 SELECT SUM(Value)
 FROM milk_production
@@ -37,12 +37,12 @@ FROM state_lookup
   
 -- Question 6. List all states with cheese production values from April 2023 and find the value for New Jersey.
   
-select sl.State, SUM(cp.Value)
-from state_lookup sl 
-join cheese_production cp 
-on sl.State_ANSI = cp.State_ANSI
-where cp.Year = 2023 and cp.Period ='APR'
-group by sl.State
+SELECT sl.State, SUM(cp.Value)
+FROM state_lookup sl 
+JOIN cheese_production cp 
+ON sl.State_ANSI = cp.State_ANSI
+WHERE cp.Year = 2023 AND cp.Period ='APR'
+GROUP BY sl.State
 
   
 -- Question 7. Find total yogurt production for states in year 2022 which also have cheese production data from 2023.

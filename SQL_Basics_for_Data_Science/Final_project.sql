@@ -1,4 +1,4 @@
-CT-- Question 1. Total milk production for 2023.
+-- Question 1. Total milk production for 2023.
 
 SELECT SUM(Value)
 FROM milk_production

@@ -64,12 +64,12 @@ group by sl.State
 
 -- Question 9. List all states with their cheese production values for April 2023 and check if Delaware is on the list.
 
-select sl.State, SUM(cp.Value)
-from state_lookup sl 
-join cheese_production cp 
-on sl.State_ANSI = cp.State_ANSI
-where cp.Year = 2023 and cp.Period ='APR'
-group by sl.State
+SELECT sl.State, SUM(cp.Value)
+FROM state_lookup sl 
+JOIN cheese_production cp 
+ON sl.State_ANSI = cp.State_ANSI
+WHERE cp.Year = 2023 AND cp.Period ='APR'
+GROUP BY sl.State
 
   
 -- Question 10. Find average coffee production for all years where the honey production exceeded 1 million.

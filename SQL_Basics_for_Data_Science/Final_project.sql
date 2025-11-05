@@ -75,9 +75,9 @@ group by sl.State
 -- Question 10. Find average coffee production for all years where the honey production exceeded 1 million.
   
 --Method 1
-select AVG(Value)
-from coffee_production
-where Year in (select Year from honey_production where Value > 1000000)
+SELECT AVG(Value)
+FROM coffee_production
+WHERE Year IN (SELECT Year FROM honey_production WHERE Value > 1000000)
 
 
 --Method2

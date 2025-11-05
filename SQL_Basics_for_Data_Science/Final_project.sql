@@ -81,9 +81,9 @@ where Year in (select Year from honey_production where Value > 1000000)
 
 
 --Method2
-select AVG (Value)
-from coffee_production
-where Year in (select Year
-from honey_production hp 
-group by Year
-having sum(Value) > 1000000)
+SELECT AVG (Value)
+FROM coffee_production
+WHERE Year IN (SELECT Year
+FROM honey_production hp 
+GROUP BY Year
+HAVING SUM(Value) > 1000000)

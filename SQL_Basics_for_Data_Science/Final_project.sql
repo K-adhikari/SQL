@@ -54,12 +54,12 @@ WHERE yp.Year = 2022 AND yp.State_ANSI IN (SELECT DISTINCT cp.State_ANSI FROM ch
 
 -- Question 8. List all states from state_lookup that are missing from milk_production in 2023.
 
-select sl.State, SUM(mp.Value)
-from state_lookup sl 
-left join milk_production mp 
-on sl.State_ANSI = mp.State_ANSI
-where mp.Year = 2023
-group by sl.State
+SELECT sl.State, SUM(mp.Value)
+FROM state_lookup sl 
+LEFT JOIN milk_production mp 
+ON sl.State_ANSI = mp.State_ANSI
+WHERE mp.Year = 2023
+GROUP BY sl.State
 
 
 -- Question 9. List all states with their cheese production values for April 2023 and check if Delaware is on the list.

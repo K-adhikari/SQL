@@ -1,15 +1,15 @@
 -- Question 1. Pull a list of customer ids with the customer’s full name, and address, along with combining their city and country together. Be sure to make a space in between these two and make it UPPER CASE. (e.g. LOS ANGELES USA)
 
-select CustomerID, FirstName, LastName, Address, City, Country,
-upper (City || ' ' || Country) as New_address
-from Customers
+SELECT CustomerID, FirstName, LastName, Address, City, Country,
+UPPER (City || ' ' || Country) AS New_address
+FROM Customers
 
 
 -- Question 2. Create a new employee user id by combining the first 4 letters of the employee’s first name with the first 2 letters of the employee’s last name. Make the new field lower case and pull each individual step to show your work.
 
-select FirstName, LastName,
-(lower(substr(FirstName, 1,4))|| '' || lower(substr(LastName, 1,2))) as userid
-from Employees
+SELECT FirstName, LastName,
+(LOWER(substr(FirstName, 1,4))|| '' || LOWER(substr(LastName, 1,2))) AS userid
+FROM Employees
 
 
 -- Question 3. Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.

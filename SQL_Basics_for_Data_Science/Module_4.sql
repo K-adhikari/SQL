@@ -35,10 +35,10 @@ Phone IS NULL
 
 -- Question 5. Find the cities with the most customers and rank in descending order.
 
-select City, count(City) as number_of_constumers
-from Customers
-group by City
-order by number_of_constumers desc;
+SELECT City, COUNT(City) AS number_of_constumers
+FROM Customers
+GROUP BY City
+ORDER BY number_of_constumers DESC;
 
 
 -- Question 6. Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.

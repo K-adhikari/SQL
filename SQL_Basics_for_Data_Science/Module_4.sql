@@ -14,18 +14,18 @@ FROM Employees
 
 -- Question 3. Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.
 
-select FirstName, LastName, HireDate, DATE('now'),
-strftime('%Y', 'now' )- strftime ('%Y', HireDate) as duration
-from Employees
-order by LastName asc;
+SELECT FirstName, LastName, HireDate, DATE('now'),
+strftime('%Y', 'now' )- strftime ('%Y', HireDate) AS duration
+FROM Employees
+ORDER BY LastName ASC;
 
 
 -- Question 4. Profiling the Customers table, answer the following question. Are there any columns with null values? Indicate any below. Select all that apply. (Note: Code was written to test null values individually (one at a time) for columns listed in question)
 
-select *
-from Customers
-where 
-Phone is NULL
+SELECT *
+FROM Customers
+WHERE 
+Phone IS NULL
 --Fax is NULL
 --PostalCode is NULL
 --Company is NULL

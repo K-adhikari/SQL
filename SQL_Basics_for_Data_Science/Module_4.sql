@@ -17,7 +17,7 @@ FROM Employees
 SELECT FirstName, LastName, HireDate, DATE('now'),
 strftime('%Y', 'now' )- strftime ('%Y', HireDate) AS duration
 FROM Employees
-ORDER BY LastName ASC;
+ORDER BY LastName ASC
 
 
 -- Question 4. Profiling the Customers table, answer the following question. Are there any columns with null values? Indicate any below. Select all that apply. (Note: Code was written to test null values individually (one at a time) for columns listed in question)
@@ -38,13 +38,13 @@ Phone IS NULL
 SELECT City, COUNT(City) AS number_of_constumers
 FROM Customers
 GROUP BY City
-ORDER BY number_of_constumers DESC;
+ORDER BY number_of_constumers DESC
 
 
 -- Question 6. Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.
 
-select C.FirstName, C.LastName, I.InvoiceID,
+SELECT C.FirstName, C.LastName, I.InvoiceID,
 C.FirstName|| '' ||C.LastName|| '' ||I.InvoiceID
-from Customers C
-join Invoices I on C.CustomerId = I.CustomerId
-order by FirstName;
+FROM Customers C
+JOIN Invoices I ON C.CustomerId = I.CustomerId
+ORDER BY FirstName

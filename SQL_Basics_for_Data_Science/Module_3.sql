@@ -10,12 +10,10 @@ WHERE Title = "Californication" )
 
 -- Question 2. Find the total number of invoices for each customer along with the customer's full name, city and email. what is the correct customer information for the 5th person, František Wichterlová? Select the answer below.
 
-select 
-CustomerID, FirstName, LastName, City, Email
-from Customers
-where CustomerID in (select
-CustomerID
-from Invoices)
+SELECT CustomerID, FirstName, LastName, City, Email
+FROM Customers
+WHERE CustomerID IN (SELECT CustomerID
+FROM Invoices)
 
 
 -- Question 3. Retrieve the track name, album, artistID, and trackID for all the albums.

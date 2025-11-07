@@ -36,10 +36,10 @@ LEFT JOIN Employees e2 ON e1.ReportsTo = e2.EmployeeID
 
 -- Question 5. Find the name and ID of the artists who do not have albums. 
 
-select Ar.Name, Ar. ArtistID, Al.Title
-from Artists Ar
-left join Albums Al on Ar.ArtistID = Al.ArtistID
-where Al.Title is NULL
+SELECT Ar.Name, Ar. ArtistID, Al.Title
+FROM Artists Ar
+LEFT JOIN Albums Al ON Ar.ArtistID = Al.ArtistID
+WHERE Al.Title IS NULL
 
 
 -- Question 6. Use a UNION to create a list of all the employee's and customer's first names and last names ordered by the last name in descending order.

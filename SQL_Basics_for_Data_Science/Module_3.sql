@@ -1,12 +1,11 @@
 -- Question 1. Using a subquery, find the names of all the tracks for the album "Californication".
 
-select 
-AlbumId, Name
-from Tracks
-where AlbumId in (select
+SELECT AlbumId, Name
+FROM Tracks
+WHERE AlbumId IN (SELECT
 AlbumId
-from Albums
-where Title = "Californication" )
+FROM Albums
+WHERE Title = "Californication" )
 
 
 -- Question 2. Find the total number of invoices for each customer along with the customer's full name, city and email. what is the correct customer information for the 5th person, František Wichterlová? Select the answer below.

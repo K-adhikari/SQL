@@ -18,20 +18,20 @@ FROM Invoices)
 
 -- Question 3. Retrieve the track name, album, artistID, and trackID for all the albums.
 
-select t.name, t.trackID, a.title, a.ArtistID
-from albums a
-left join Tracks t on t.AlbumId = a.AlbumId
+SELECT t.name, t.trackID, a.title, a.ArtistID
+FROM albums a
+LEFT JOIN Tracks t ON t.AlbumId = a.AlbumId
 
 
 -- Question 4. Retrieve a list with the managers last name, and the last name of the employees who report to him or her. 
 
-select 
+SELECT 
 e1.FirstName || ' ' || e1.LastName
-as employeename,
+AS employeename,
 e2.FirstName || ' ' || e2.LastName
-as managername
-from Employees e1
-left join Employees e2 on e1.ReportsTo = e2.EmployeeID
+AS managername
+FROM Employees e1
+LEFT JOIN Employees e2 ON e1.ReportsTo = e2.EmployeeID
 
 
 -- Question 5. Find the name and ID of the artists who do not have albums. 

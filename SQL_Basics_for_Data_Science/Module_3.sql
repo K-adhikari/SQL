@@ -44,12 +44,12 @@ WHERE Al.Title IS NULL
 
 -- Question 6. Use a UNION to create a list of all the employee's and customer's first names and last names ordered by the last name in descending order.
 
-select FirstName, LastName
-from Employees
-union
-select FirstName, LastName
-from Customers
-order by LastName desc;
+SELECT FirstName, LastName
+FROM Employees
+UNION
+SELECT FirstName, LastName
+FROM Customers
+ORDER BY LastName DESC;
 
 
 -- Question 7. See if there are any customers who have a different city listed in their billing city versus their customer city.

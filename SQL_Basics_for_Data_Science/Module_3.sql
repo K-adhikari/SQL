@@ -54,7 +54,7 @@ ORDER BY LastName DESC;
 
 -- Question 7. See if there are any customers who have a different city listed in their billing city versus their customer city.
 
-select C.FirstName, C.LastName, C.City, I.BillingCity
-from Customers C
-left join Invoices I on C.CustomerID = I.CustomerID
-where C.City <> I.BillingCity
+SELECT C.FirstName, C.LastName, C.City, I.BillingCity
+FROM Customers C
+LEFT JOIN Invoices I ON C.CustomerID = I.CustomerID
+WHERE C.City <> I.BillingCity

@@ -9,11 +9,9 @@ WHERE Milliseconds >= 5000000
 
 -- Question 2. Find all the invoices whose total is between $5 and $15 dollars. How many total records are there?
 
-select
-InvoiceID,
-Total
-from Invoices
-where Total between 5 and 15
+SELECT InvoiceID, Total
+FROM Invoices
+WHERE Total BETWEEN 5 AND 15
 
 
 -- Question 3. Find all the customers from the following States: RJ, DF, AB, BC, CA, WA, NY. What company does Jack Smith work for?

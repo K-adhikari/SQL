@@ -2,11 +2,9 @@
 
 -- Question 1. Find all the tracks that have a length of 5,000,000 milliseconds or more.
 
-select
-TrackID,
-Milliseconds
-from Tracks
-where Milliseconds >= 5000000
+SELECT TrackID, Milliseconds
+FROM Tracks
+WHERE Milliseconds >= 5000000
 
 
 -- Question 2. Find all the invoices whose total is between $5 and $15 dollars. How many total records are there?

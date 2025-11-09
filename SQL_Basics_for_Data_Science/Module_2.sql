@@ -16,13 +16,9 @@ WHERE Total BETWEEN 5 AND 15
 
 -- Question 3. Find all the customers from the following States: RJ, DF, AB, BC, CA, WA, NY. What company does Jack Smith work for?
 
-select
-FirstName,
-LastName,
-State,
-Company
-from Customers
-where State in ('RJ', 'DF', 'AB', 'BC', 'CA', 'WA', 'NY')
+SELECT FirstName, LastName, State, Company
+FROM Customers
+WHERE State IN ('RJ', 'DF', 'AB', 'BC', 'CA', 'WA', 'NY')
 
 
 -- Question 4. Find all the invoices for customer 56 and 58 where the total was between $1.00 and $5.00. 

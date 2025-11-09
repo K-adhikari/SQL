@@ -24,14 +24,10 @@ WHERE State IN ('RJ', 'DF', 'AB', 'BC', 'CA', 'WA', 'NY')
 -- Question 4. Find all the invoices for customer 56 and 58 where the total was between $1.00 and $5.00. 
 -- What was the invoice date for invoice ID 315?
 
-select
-CustomerID,
-InvoiceDate,
-InvoiceID,
-Total
-from Invoices
-where CustomerID in (56,58) and
-Total between 1.00 and 5.00
+SELECT CustomerID, InvoiceDate, InvoiceID, Total
+FROM Invoices
+WHERE CustomerID IN (56,58) AND
+Total BETWEEN 1.00 AND 5.00
 
 
 -- Question 5. Find all the tracks whose name starts with 'All'.

@@ -47,13 +47,10 @@ WHERE Email LIKE 'J%@gmail.com'
 -- Question 7. Find all the invoices from the billing city Brasília, Edmonton, and Vancouver and sort in descending order by invoice ID.
 -- What is the total invoice amount of the first record returned?
 
-select 
-InvoiceID,
-BillingCity,
-Total
-from Invoices
-where BillingCity in ('Brasilia', 'Edmonton', 'Vancouver')
-order by InvoiceID desc;
+SELECT InvoiceID, BillingCity, Total
+FROM Invoices
+WHERE BillingCity IN ('Brasilia', 'Edmonton', 'Vancouver')
+ORDER BY InvoiceID DESC;
 
 
 -- Question 8. Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.

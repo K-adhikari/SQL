@@ -55,12 +55,11 @@ ORDER BY InvoiceID DESC;
 
 -- Question 8. Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.
 
-select 
-CustomerID,
-count(*) as orders
-from Invoices
-group by CustomerID
-order by orders desc;
+SELECT CustomerID,
+COUNT(*) AS orders
+FROM Invoices
+GROUP BY CustomerID
+ORDER BY orders DESC;
 
 
 -- Question 9. Find the albums with 12 or more tracks. How many total records there are?

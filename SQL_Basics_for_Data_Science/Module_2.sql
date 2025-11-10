@@ -39,10 +39,9 @@ WHERE Name LIKE 'All%'
 
 -- Question 6. Find all the customer emails that start with "J" and are from gmail.com.
 
-select
-Email
-from Customers
-where Email like 'J%@gmail.com'
+SELECT Email
+FROM Customers
+WHERE Email LIKE 'J%@gmail.com'
 
 
 -- Question 7. Find all the invoices from the billing city Brasília, Edmonton, and Vancouver and sort in descending order by invoice ID.

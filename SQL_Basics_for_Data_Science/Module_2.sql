@@ -32,10 +32,9 @@ Total BETWEEN 1.00 AND 5.00
 
 -- Question 5. Find all the tracks whose name starts with 'All'.
 
-select
-Name
-from Tracks
-where Name like 'All%'
+SELECT Name
+FROM Tracks
+WHERE Name LIKE 'All%'
 
 
 -- Question 6. Find all the customer emails that start with "J" and are from gmail.com.

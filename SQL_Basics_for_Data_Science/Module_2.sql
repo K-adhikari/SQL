@@ -53,7 +53,7 @@ WHERE BillingCity IN ('Brasilia', 'Edmonton', 'Vancouver')
 ORDER BY InvoiceID DESC;
 
 
--- Question 8. Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.
+-- Question 8. Show the number of orders placed by each customer (from the invoices table) and sort the result by the number of orders in descending order.
 
 SELECT CustomerID,
 COUNT(*) AS orders
@@ -64,12 +64,11 @@ ORDER BY orders DESC;
 
 -- Question 9. Find the albums with 12 or more tracks. How many total records there are?
 
-select 
-AlbumID,
-count(*) as total_tracks
-from Tracks
-group by AlbumID
-having count(*) >= 12
+SELECT AlbumID,
+COUNT(*) AS total_tracks
+FROM Tracks
+GROUP BY AlbumID
+HAVING COUNT(*) >= 12
 
 
 

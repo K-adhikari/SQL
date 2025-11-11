@@ -12,6 +12,6 @@ FROM Employees
 
 -- Question 3. Retrieve all the columns from the Tracks table, but only return 20 rows.
 
-select *
-from Tracks
-limit 20
+SELECT *
+FROM Tracks
+LIMIT 20

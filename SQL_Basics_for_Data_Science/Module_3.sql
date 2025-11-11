@@ -2,8 +2,7 @@
 
 SELECT AlbumId, Name
 FROM Tracks
-WHERE AlbumId IN (SELECT
-AlbumId
+WHERE AlbumId IN (SELECT AlbumId
 FROM Albums
 WHERE Title = "Californication" )
 

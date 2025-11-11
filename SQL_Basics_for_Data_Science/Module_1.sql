@@ -1,7 +1,7 @@
 -- Question 1. Retrieve all the records from the Employees table.
 
-select *
-from Employees
+SELECT *
+FROM Employees
 
 
 -- Question 2. Retrieve the FirstName, LastName, Birthdate, Address, City, and State from the Employees table.
